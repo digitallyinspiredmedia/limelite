@@ -1,0 +1,23 @@
+.coupencover{
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background-color: #ddd;
+	padding: 10px;
+	overflow: auto;
+}
+.leftcontent{
+	background-color: green;
+	width: calc(100% / 2) ;
+	float: left;
+	padding: 5px;
+}
+.rightcontent{
+	background-color: white;
+	width: calc(100% / 2) ;
+	float: left;
+	padding: 5px;
+}
+.leftcontent span,
+.rightcontent span{
+	display: block;
+}

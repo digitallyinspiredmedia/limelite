@@ -2,7 +2,7 @@
 $request =""; //initialise the request variable
 $param[method]= "sendMessage";
 $param[send_to] = "917811811767";
-$param[msg] = "Hello";
+$param[msg] = "Dear Patron, We are Celebrating our 1st anniversary at LIMELITE-Race course! Avail flat 30% off on services. Hurry, Ltd period offer. Call 0422- 4202006 for appt.";
 $param[msg_type] = "TEXT"; //Can be "FLASH”/"UNICODE_TEXT"/”BINARY”
 $param[userid] = "2000142572";
 //$param[userid] = "2000158751";
