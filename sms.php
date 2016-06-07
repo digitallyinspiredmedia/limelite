@@ -4,10 +4,10 @@ $param[method]= "sendMessage";
 $param[send_to] = "917811811767";
 $param[msg] = "Hello";
 $param[msg_type] = "TEXT"; //Can be "FLASH”/"UNICODE_TEXT"/”BINARY”
-$param[userid] = "q1ocL2FL4";
+$param[userid] = "2000142572";
 $param[password] = "q1ocL2FL4";
 $param[v] = "1.1";
-//$param[auth_scheme] = "PLAIN";
+$param[auth_scheme] = "PLAIN";
 //Have to URL encode the values
 foreach($param as $key=>$val) {
 $request.= $key."=".urlencode($val);
