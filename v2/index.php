@@ -186,16 +186,16 @@
   <div class="form-group">
 	<div class="selectric-wrapper">
 		 <select name="set_value" id="set_value">
-          <option value="Men Combo One">Men Combo One</option>
-          <option value="Men Combo Two">Men Combo Two</option>
-          <option value="Men Combo Three">Men Combo Three</option>
-          <option value="Men Combo Four">Men Combo Four</option>
-          <option value="Men Combo Five">Men Combo Five</option>
-          <option value="Female Combo One">Female Combo One</option>
-          <option value="Female Combo Two">Female Combo Two</option>
-          <option value="Female Combo Three">Female Combo Three</option>
-          <option value="Female Combo Four">Female Combo Four</option>
-          <option value="Female Combo Five">Female Combo Five</option>
+          <option value="Men-Combo-One">Men Combo One</option>
+          <option value="Men-Combo-Two">Men Combo Two</option>
+          <option value="Men-Combo-Three">Men Combo Three</option>
+          <option value="Men-Combo-Four">Men Combo Four</option>
+          <option value="Men-Combo-Five">Men Combo Five</option>
+          <option value="Female-Combo-One">Female Combo One</option>
+          <option value="Female-Combo-Two">Female Combo Two</option>
+          <option value="Female-Combo-Three">Female Combo Three</option>
+          <option value="Female-Combo-Four">Female Combo Four</option>
+          <option value="Female-Combo-Five">Female Combo Five</option>
         </select>
 	</div>
   </div>
