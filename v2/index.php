@@ -185,7 +185,7 @@
   </div>
   <div class="form-group">
 	<div class="selectric-wrapper">
-		 <select name="set_value" id="set_value" disabled>
+		 <select name="set_value" id="set_value">
           <option value="Men-Combo-One">Men Combo One</option>
           <option value="Men-Combo-Two">Men Combo Two</option>
           <option value="Men-Combo-Three">Men Combo Three</option>
