@@ -203,9 +203,26 @@
   </div>
   <div class="checkbox">
     <label>
-      <input type="checkbox" checked="checked">T &amp; C
+      Just by clicking Submit your are accepted our<a data-toggle="modal" data-target="#myModal">T &amp; C</a>
     </label>
   </div>
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Terms and Condition</h4>
+      </div>
+      <div class="modal-body">
+      <ul>
+        <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+        <li>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
