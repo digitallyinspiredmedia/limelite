@@ -1,1 +1,6 @@
-thankyou.php
+<?php
+
+
+echo " balab la";
+
+?>
