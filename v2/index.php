@@ -130,7 +130,7 @@
 		<div id="set_eight_option" class="coupencover">
 			<div class="leftcontent">
 				<span class="service"> Hair Cut - regular </span>
-				<span class="service"> Green Tea Prdicure + </span>
+				<span class="service"> Green Tea Pedicure + </span>
 				<span class="service"> Pristine Peari Facial </span>
 			</div>
 			<div class="rightcontent">
@@ -143,7 +143,7 @@
 		<div id="set_nineth_option" class="coupencover">
 			<div class="leftcontent">
 				<span class="service"> L'Oreal Hair spa </span>
-				<span class="service"> Green Tea Prdicure + </span>
+				<span class="service"> Green Tea Pedicure + </span>
 				<span class="service"> Luminous Glow Facial  </span>
 			</div>
 			<div class="rightcontent">
@@ -156,7 +156,7 @@
 		<div id="set_tenth_option" class="coupencover">
 			<div class="leftcontent">
 				<span class="service"> L'Oreal Hair spa </span>
-				<span class="service"> Green Tea Prdicure + </span>
+				<span class="service"> Green Tea Pedicure + </span>
 				<span class="service"> Silkem Glow Facial  </span>
 			</div>
 			<div class="rightcontent">
@@ -293,6 +293,14 @@ $('#set_tenth_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 9).selectric('refresh');
 });
 
+
+});
+
+$(document).ready(function(){
+    $(".coupencover").bind('click', function(){
+       if($(".coupencover.usedme").length) $(".coupencover.usedme").removeClass('usedme');
+       $(this).addClass('usedme');
+    }); 
 });
 
 </script>

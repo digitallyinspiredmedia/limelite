@@ -1,7 +1,7 @@
 .coupencover{
 	border: 1px solid #ccc;
 	border-radius: 6px;
-	background-color: #ddd;
+	
 	padding: 10px;
 	overflow: auto;
 	cursor: pointer;
@@ -21,4 +21,11 @@
 .leftcontent span,
 .rightcontent span{
 	display: block;
+}
+.coupencover.useme{
+	background-color: #ddd;
+}
+.coupencover.usedme{
+	background: red;
+	transistion : all 0.3s easeOutBack;
 }
