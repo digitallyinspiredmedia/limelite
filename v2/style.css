@@ -24,8 +24,14 @@
 }
 .coupencover.useme{
 	background-color: #ddd;
+	transistion : all 0.6s easeOutBack;
+}
+.coupencover:hover,
+.coupencover:focus{
+	background: red;
+	transistion : all 0.6s easeOutBack;
 }
 .coupencover.usedme{
 	background: red;
-	transistion : all 0.3s easeOutBack;
+	transistion : all 0.6s easeOutBack;
 }
