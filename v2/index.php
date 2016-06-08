@@ -295,14 +295,19 @@ $('#set_tenth_option').on('click', function() {
 
 
 });
-
+//onclick add class as active
 $(document).ready(function(){
     $(".coupencover").bind('click', function(){
        if($(".coupencover.usedme").length) $(".coupencover.usedme").removeClass('usedme');
        $(this).addClass('usedme');
     }); 
 });
-
+//onclick move to form
+$(".coupencover").click(function() {
+    $('html, body').animate({
+        scrollTop: $("form").offset().top
+    }, 2000);
+});
 </script>
 </body>
 </html>
