@@ -171,9 +171,7 @@
 
 
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-1 col-lg-4">
-<!-- <form id="ajax-contact" method="post" action="mailer.php"> -->
 	<div id="form-messages">
-
 <form id="ajax-contact" method="post" action="storage.php">
   <div class="form-group">
     <label for="name">Name</label>
@@ -233,62 +231,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="selectric.js"></script>
-
 <script>
-$(function() {
-
-	// Get the form.
-	var form = $('#ajax-contact');
-
-	// Get the messages div.
-	var formMessages = $('#form-messages');
-
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#set_value').val('');
-			$('#number').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-
-	});
-
-});
-
-
 $(function(){
  
 $('#set_value').selectric();

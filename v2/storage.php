@@ -23,8 +23,7 @@ $email = $_POST['email'];
 $number = $_POST['number'];
 $combo = $_POST['set_value'];
 
-
-                //sms
+ //sms
 $request =""; //initialise the request variable
 $param[send_to] = $number;
 if ($combo == "Men-Combo-One") {
@@ -111,32 +110,27 @@ curl_close($ch);
                 //status of email 
                 //http_response_code(200);
                 //status of store
-                echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
+                //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
                 //status of sms ok 
-                echo $curl_scraped_page;
+                //echo $curl_scraped_page;
+
+                    header("Location: thankyou.php");
                 } else {   // If Returned user . update the user record
                 //$query = "UPDATE sms SET name='$name', email='$email', number='$number',combo='$combo' where email='$email' ";
-                     $query = "INSERT INTO sms (name,email,number,combo) VALUES ('$name','$email','$number','$combo')";
+                $query = "INSERT INTO sms (name,email,number,combo) VALUES ('$name','$email','$number','$combo')";
                 mysql_query($query);
             //status of email 
-                http_response_code(200);
+                //http_response_code(200);
             //status of store
-                echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
+                //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
             //status of sms
-                echo $curl_scraped_page;
+                //echo $curl_scraped_page;
+                 header("Location: thankyou.php");
                 }
             }
 
         //}
-        else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message. Please refresh the page and fill the form";
-        }
- }else {
-    // Not a POST request, set a 403 (forbidden) response code.
-    http_response_code(403);
-    echo "There was a problem with your submission, please try again.";
-}
+        
+ }
       
 ?>
