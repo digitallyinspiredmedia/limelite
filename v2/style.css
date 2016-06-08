@@ -4,6 +4,7 @@
 	background-color: #ddd;
 	padding: 10px;
 	overflow: auto;
+	cursor: pointer;
 }
 .leftcontent{
 	background-color: green;

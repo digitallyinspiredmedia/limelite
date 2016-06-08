@@ -185,7 +185,7 @@
   </div>
   <div class="form-group">
 	<div class="selectric-wrapper">
-		 <select name="set_value" id="set_value">
+		 <select name="set_value" id="set_value" disabled>
           <option value="Men-Combo-One">Men Combo One</option>
           <option value="Men-Combo-Two">Men Combo Two</option>
           <option value="Men-Combo-Three">Men Combo Three</option>
@@ -205,7 +205,7 @@
   </div>
   <div class="checkbox">
     <label>
-      <input type="checkbox">T &amp; C
+      <input type="checkbox" checked="checked">T &amp; C
     </label>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
