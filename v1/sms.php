@@ -24,18 +24,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 $name = $_POST['name'];
 $email = $_POST['email'];
 $number = $_POST['number'];
-//$message = $_POST['message'];
 
-
-
-
-//function checkuser($ID,$name,$email,$number,$message){
-
- $check = mysql_query("select * from users where email='$email'");
-	$check = mysql_num_rows($check);
-	if (empty($check)) { // if new user . Insert a new record
-	$query = "INSERT INTO users (name,email,number,message) VALUES ('$name','$email','$number','$message')";
-	mysql_query($query);
 
 //sms
 $request =""; //initialise the request variable
@@ -66,14 +55,22 @@ $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $curl_scraped_page = curl_exec($ch);
 curl_close($ch);
+//echo $curl_scraped_page;
+//function checkuser($ID,$name,$email,$number,$message){
 
-	echo ' :) ' ;
-	} else {   // If Returned user . update the user record
-	$query = "INSERT INTO users (name,email,number,message) VALUES ('$name','$email','$number','$message')";
+ $check = mysql_query("select * from users where email='$email'");
+	$check = mysql_num_rows($check);
+	if (empty($check)) { // if new user . Insert a new record
+	$query = "INSERT INTO users (name,email,number) VALUES ('$name','$email','$number')";
 	mysql_query($query);
-	echo ' :) ' ;
+
+	header("Location: thankyou.php");
+	} else {   // If Returned user . update the user record
+	$query = "INSERT INTO users (name,email,number) VALUES ('$name','$email','$number')";
+	mysql_query($query);
+	header("Location: thankyou.php");
 	}
-	echo $curl_scraped_page;
+	
 //}
 
 

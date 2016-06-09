@@ -65,6 +65,7 @@ header .logo-container{
 	margin-top: 156px;
     overflow: hidden;
     margin-bottom: 60px;
+    text-align: center;
 }
 .thankyou.view{
 	font-size: 30px;

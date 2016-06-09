@@ -279,7 +279,7 @@
   			<div class="form-group">
   				<label for="set_value">Selected service</label>
 					<div class="selectric-wrapper">
-		 				<select name="set_value" id="set_value" disabled>
+		 				<select name="set_value" id="set_value">
 				          <option value="No-Combo" selected></option>
 				          <option value="Men-Combo-One">Men Combo One</option>
 				          <option value="Men-Combo-Two">Men Combo Two</option>
@@ -302,18 +302,18 @@
   		<div class="group tc">
   			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#myModal">terms and conditions</a>
+      				<input type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#tc">terms and conditions</a>
     			</label>
   			</div>
   		</div>
   		<div class="group btc">
   			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal fade" id="tc" tabindex="-1" role="dialog" aria-labelledby="tclabel">
   				<div class="modal-dialog" role="document">
     				<div class="modal-content">
       					<div class="modal-header">
         					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        					<h4 class="modal-title" id="myModalLabel">Terms and Condition</h4>
+        					<h4 class="modal-title" id="tclabel">Terms and Condition</h4>
       					</div>
       					<div class="modal-body">
       					<ul>
