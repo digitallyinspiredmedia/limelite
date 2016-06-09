@@ -1,0 +1,314 @@
+a,
+a:hover,
+a:focus,
+a:active,
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus,.btn,
+.coupencover:hover,
+.coupencover:focus,
+.coupencover:hover .leftcontent,
+.coupencover:focus .leftcontent{
+        -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	outline: 0;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus,:focus{
+	outline: 0;
+	border: 0;
+}
+
+@font-face {
+    font-family: 'helveticabold';
+    src: url('helvetica-bold-webfont.woff2') format('woff2'),
+         url('helvetica-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('a403890a_1-webfont.woff2') format('woff2'),
+         url('a403890a_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*@media(max-width: 500px){
+	.col-xs-6{
+		width: 100%;
+	}
+}*/
+header{
+	position: relative;
+}
+header .logo-container{
+	background: #ff3333;
+	padding-top: 54px;
+	min-height: 100vh;
+}
+.logo img{
+	margin: 0 auto;
+}
+.banner-container{
+	position: absolute;
+	top: 152px;
+	right: 0;
+	left: 0;
+}
+.view{
+	margin-top: 156px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.thankyou.view{
+	font-size: 30px;
+	font-family: 'helveticabold';
+	text-align: center;
+	text-transform: uppercase;
+}
+.coupentitle,
+.coupencover{
+	text-align: center;
+}
+.coupentitle span{
+	text-align: center;
+	text-transform: uppercase;
+	border: 3px dashed #ff3333;
+	border-bottom: 0px;
+	border-radius: 0px;
+	padding: 10px 48px 0;
+	margin-bottom: 5px;
+	display: inline-block;
+	font-family: 'helveticabold';
+	font-size: 25px;
+}
+.coupencover{
+	border: 1px solid #626262;
+	max-width: 463px;
+	max-height: 146px;
+	background-color: #7e7e7e;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.leftcontent{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	float: left;
+	border: 1px solid #7e7e7e;
+	background-color: #7e7e7e;
+	width: 50%;
+	padding: 10px;
+	display: inline-block;
+	height: 146px;
+	display: table;
+}
+.center{
+	display: table-cell;
+	vertical-align: middle;
+}
+.rightcontent{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	width: 50%;
+	padding: 10px;
+	display: inline-block;
+	height: 146px;
+	display: table;
+}
+#set_fourth_option .leftcontent{
+	padding: 5px;
+}
+.coupencover:hover,
+.coupencover:focus,
+.coupencover:hover .leftcontent,
+.coupencover:focus .leftcontent,
+.leftcontent:hover,
+.leftcontent:focus{
+	background-color: #ec1c23;
+	border-color: #ec1c23;
+}
+span.service {
+    display: block;
+    font-size: 20px;
+    font-family: 'helveticabold';
+    line-height: 28px;
+    color: #fff;
+}
+#set_fourth_option .service small,
+#set_sixth_option .service small,
+#set_seventh_option .service small{
+	position: relative;
+	top: -10px;
+}
+#set_sixth_option .service:first-child small,
+#set_seventh_option .service:first-child small{
+	position: static;
+	top: -0;
+}
+.rightcontent span{
+	display: block;
+}
+.actualpricetitle{
+	font-size: 18px;
+	font-family: 'helveticaregular';
+}
+.actualpricerate{
+	font-size: 20px;
+	font-family: 'helveticaregular';
+	color: #ff0000;
+	text-decoration:line-through;
+	text-transform: uppercase;
+}
+.actualpricerate span sup i,
+.actualpricerate span sup{
+	text-decoration: none;
+}
+.actualpricerate span{
+	color: #000;
+}
+.combopricetitle{
+	font-family: 'helveticabold';
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.combopricerate{
+	font-family: 'helveticabold';
+	font-size: 34px;
+}
+.combopricerate i{
+    position: relative;
+    top: -.3em;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    font-size: 28px;
+}
+@media (min-width: 210px) {
+	div#form-messages{
+		width: 310px;
+		margin: auto;
+	}
+	.form-group{
+		width: 100%;
+	}
+}
+@media (min-width: 780px) {
+	div#form-messages{
+		width: 782px;
+		margin: auto;
+	}	
+	.form-group{
+		width: 372px;
+		margin-right: 16px;
+	}
+
+}
+
+.form-title{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #000;
+	font-family: 'helveticabold';
+	font-size: 36px;
+	line-height: normal;
+}
+.form-group label{
+	 font-family: 'helveticaregular';
+	 font-size: 14px;
+	 font-weight: normal;
+     margin: 0;
+     line-height: normal;
+     margin-bottom: 3px;
+     display: block;
+}
+.form-container{
+	background-color: #ededed;
+	overflow: hidden;
+    padding-bottom: 41px;
+}
+.group{
+	display: block;
+	padding-bottom: 26px;
+}
+.group.atc{
+	padding-bottom: 8px;
+}
+.group.tc{
+	padding-bottom: 16px;
+}
+.group.btc{
+	padding-bottom: 0;
+}
+.form-inline .checkbox input[type=checkbox]{
+	border-radius: 0;
+	vertical-align: sub;
+}
+.form-inline .form-control {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 3px;
+	border: 1px solid #cacaca;
+}
+.selectric{
+	border: 1px solid #cacaca;
+    background: #fff;
+    border-radius: 3px;
+    cursor: not-allowed;
+}
+.selectric .label{
+	text-align: left;
+}
+.selectric .button{
+	border-color: #cacaca;
+	border-left: 1px solid #cacaca;
+	background-color: #fff;
+}
+.btn-default{
+	background-color: #ed1c24;
+	border-color: #ed1c24;
+	outline: 0;
+	border-radius: 3px;
+	color: #fff;
+	 font-family: 'helveticaregular';
+	 font-size: 20px;
+	 line-height: normal;
+	 padding: 16px 0px;
+	 width: 192px;
+	text-align: center;
+}
+.btn-default:hover,
+.btn-default:focus{
+	color: #ed1c24;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+footer{
+	background-color: #fff;
+	padding-top: 34px;
+	padding-bottom: 34px;
+	text-align: center;
+	overflow: hidden;
+}
+footer a{
+	color: #000;
+	font-family: 'helveticaregular';
+	font-size: 16px;
+	text-decoration: none;
+}
+footer a:hover,
+footer a:focus{
+	color: #ff3333;
+	text-decoration: none;
+}

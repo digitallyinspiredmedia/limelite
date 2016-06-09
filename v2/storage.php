@@ -26,15 +26,15 @@ $combo = $_POST['set_value'];
  //sms
 $request =""; //initialise the request variable
 $param[send_to] = $number;
-if ($combo == "Men-Combo-One") {
+if ($combo == "Combo-One") {
     $param[msg] = "Dear Patron, We are Celebrating our 1st anniversary at LIMELITE-Race course! Avail flat 30% off on services. Hurry, Ltd period offer. Call 0422- 4202006 for appt."; }
- elseif ($combo == "Men-Combo-Two"){
+ elseif ($combo == "Combo-Two"){
     $param[msg] = "Dear Patron, Limelite Salon- LB road is closed for renovation from today. To enjoy your continued services at Limelite, Call our nearest salon in Chamiers road: 044-24353751 or ECR-Neelankarai: 044-42868080"; }
- elseif ($combo == "Men-Combo-Three"){
+ elseif ($combo == "Combo-Three"){
    $param[msg] = "Dear Patron, Get dreamy makeovers with the LIMELITE MONTH END OFFER ! Avail FLAT 30% OFF on all services at our Racecourse salon . Call 4202006 for appt. Offer valid till May 31 , 2016.T&C."; }
- elseif ($combo == "Men-Combo-Four"){
+ elseif ($combo == "Combo-Four"){
     $param[msg] = "Dear Patron, Get dreamy makeovers with the LIMELITE MONTH END OFFER ! Avail FLAT 30% OFF on all services at our Forum mall salon . Call 66528417 for appt. Offer valid till May 31 , 2016.T&C."; }
- elseif ($combo == "Men-Combo-Five"){
+ elseif ($combo == "Combo-Five"){
      $param[msg] = "Dear Patron, Get dreamy makeovers with the LIMELITE MONTH END OFFER ! Avail FLAT 30% OFF on all services at our Jayanagar salon . Call 40993255 for appt. Offer valid till May 31 , 2016.T&C."; }
  elseif ($combo == "Female-Combo-One") {
      $param[msg] = "Dear Patron, Limelite Salon- LB road is currently closed for renovation. To enjoy your continued services at Limelite, Call our nearest salon in ECR-Neelankarai: 044-42868080 or Chamiers road: 044-24353751."; }

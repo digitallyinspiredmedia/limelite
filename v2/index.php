@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="utf-8">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lime light 0.2</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="selectric.css">
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta name="author" content="">
+ <title>Lime light 0.2</title>
+<!--  <script src="https://use.fontawesome.com/d0029c4b59.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/selectric.css">
+ <link rel="stylesheet" href="css/style.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -17,280 +21,404 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="menu-push">
+<body>
 <!-- Header -->
- <header>
- 
- </header>
+<header class="text-center">
+<div class="container-fluid logo-container">
+	<div class="row">
+	 <div class="logo">
+	  <img src="img/logo.png" alt="Lime Light" title="Lime Light" class="img-responsive" />
+	 </div>
+	</div>
+</div><!-- container-fluid logo-container -->
+<div class="container banner-container">
+	<div class="row">
+  	 <div class="banner">
+  	  <img src="img/banner.png" alt="star style combos" title="" class="img-responsive"  />
+  	 </div>
+  	</div>
+</div><!-- container . banner-container -->
+</header>
+ <!-- Header -->
 <!-- content begin -->
- <div class="container">
-  <div class="row">
- <div class="jumbotron" style="background: url('banner.png') no-repeat center; background-size: cover; height:800px;width: 100%; display: block; ">
-  
-</div>
-</div>
-<!-- jumbotrong -->
-<div class="row view">
-	<div class="col-lg-6">
-	<div class="coupencover"> men </div>
+<div class="container">
+ <div class="row">
+  <div class="view">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	  <div class="coupentitle"><span> men </span></div>
+	  	<div id="set_zero_option"> </div>
 		<div id="set_first_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut + </span>
-				<span class="service"> Shaving + </span>
+				<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> </span>
+				<span class="service"> Shaving <span class="symbol">+</span> </span>
 				<span class="service"> Head Message  </span>
+				</div>
 			</div>
 			<div class="rightcontent">
+				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 470</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 199</span>
+				<span class="actualpricerate">
+					<span> <sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 470 </span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i> 199
+				</span>
+				</div>
 			</div>
 		</div> <!-- set_first_option -->
 		<div id="set_second_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut + </span>
-				<span class="service"> Expressfacial + </span>
+				<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> </span>
+				<span class="service"> Express facial <span class="symbol">+</span> </span>
 				<span class="service"> Head Message  </span>
+				</div>
 			</div>
 			<div class="rightcontent">
+				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 875</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 399</span>
+				<span class="actualpricerate">
+					<span> <sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 875</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i> 399
+				</span>
+				</div>
 			</div>	
 		</div> <!-- set_second_option -->
 		<div id="set_third_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut + </span>
-				<span class="service"> Insta Glow Facial + </span>
+				<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> </span>
+				<span class="service"> Insta Glow Facial <span class="symbol">+</span> </span>
 				<span class="service"> Head Message  </span>
+				</div>
 			</div>
 			<div class="rightcontent">
+				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 1200 </del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 599</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 1200 </span>
+				</span>
+				<span class="combopricetitle">COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i>599
+				</span>
+				</div>
 			</div>
 		</div> <!-- set_third_option -->
 		<div id="set_fourth_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut + </span>
-				<span class="service"> Freshen Citron Pedicare + </span>
-				<span class="service"> L'oreal Inoa  </span>
+				<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> </span>
+				<span class="service"> Freshen Citron Pedicure <span class="symbol">+</span> </span>
+				<span class="service"> L'oreal Inoa <br> <small>(non-ammonla color)</small></span>
+				</div>
 			</div>
 			<div class="rightcontent">
+				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 1385</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 699</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 1385</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i>699
+				</span>
+				</div>
 			</div>		
 		</div><!-- set_fourth_option -->
 		<div id="set_fifth_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut + </span>
-				<span class="service"> L'oreal Hair Spa + </span>
+				<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> </span>
+				<span class="service"> L'oreal Hair Spa <span class="symbol">+</span> </span>
 				<span class="service"> Pristine pearl facial  </span>
+				</div>
 			</div>
 			<div class="rightcontent">
+				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 1875</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 999</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 1875</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate"><i class="fa fa-inr" aria-hidden="true"></i> 999</span>
+				</div>
 			</div>		
 		</div><!-- set_fifth_option -->
-	</div> <!-- mes section over -->
-	<div class="col-lg-6">
-	<div class="coupencover"> women </div>
-	<div id="set_sixth_option" class="coupencover">
+	</div><!-- col-lg-6 -->
+	<!-- men section over -->
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	 <div class="coupentitle"><span> women </span></div>
+		<div id="set_sixth_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut - regular </span>
+			<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> <small>regular</small></span>
 				<span class="service"> Head Message </span>
-				<span class="service"> Eyebrow &amp; Upper lip</span>
+				<span class="service"> Threading <span class="symbol">-</span> <br><small>eyebrow &amp; upper lip</small></span>
+			</div>
 			</div>
 			<div class="rightcontent">
+			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 695</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 299</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 695</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price  </span>
+				<span class="combopricerate"> <i class="fa fa-inr" aria-hidden="true"></i> 299 </span>
+			</div>
 			</div>		
-		</div>
+		</div><!-- ser_sixth_option -->
 		<div id="set_seventh_option" class="coupencover">
 			<div class="leftcontent">
-				<span class="service"> Hair Cut - regular </span>
-				<span class="service"> Express facial + </span>
-				<span class="service"> Waxing - full arm &amp; under arm  </span>
+			<div class="center">
+				<span class="service"> Hair Cut <span class="symbol">+</span> <small>regular</small></span>
+				<span class="service"> Express facial <span class="symbol">+</span> </span>
+				<span class="service"> Waxing <span class="symbol">-</span> <br> <small>full arm &amp; under arm </small></span>
+			</div>
 			</div>
 			<div class="rightcontent">
+			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 910</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 499</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 910</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate"> <i class="fa fa-inr" aria-hidden="true"></i> 499</span>
+			</div>
 			</div>		
-		</div>
+		</div><!-- ser_seventh_option -->
 		<div id="set_eight_option" class="coupencover">
-			<div class="leftcontent">
-				<span class="service"> Hair Cut - regular </span>
-				<span class="service"> Green Tea Pedicure + </span>
-				<span class="service"> Pristine Peari Facial </span>
+			<div class="leftcontent contentheight">
+			<div class="center">
+				<span class="service"> Hair Cut - <small>regular</small> </span>
+				<span class="service"> Green Tea pedicure + </span>
+				<span class="service"> Pristine Pearl Facial </span>
 			</div>
-			<div class="rightcontent">
+			</div>
+			<div class="rightcontent contentheight">
+			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 2050</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 849</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 2050</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i> 849
+				</span>
+			</div>
 			</div>		
-		</div>
+		</div><!-- ser_eight_option -->
 		<div id="set_nineth_option" class="coupencover">
 			<div class="leftcontent">
+			<div class="center">
 				<span class="service"> L'Oreal Hair spa </span>
 				<span class="service"> Green Tea Pedicure + </span>
 				<span class="service"> Luminous Glow Facial  </span>
 			</div>
+			</div>
 			<div class="rightcontent">
+			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 2905</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 1199</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 2905</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i> 1199
+				</span>
+			</div>
 			</div>		
-		</div>
+		</div><!-- ser_nineth_option -->
 		<div id="set_tenth_option" class="coupencover">
 			<div class="leftcontent">
+			<div class="center">
 				<span class="service"> L'Oreal Hair spa </span>
 				<span class="service"> Green Tea Pedicure + </span>
 				<span class="service"> Silkem Glow Facial  </span>
 			</div>
+		    </div>
 			<div class="rightcontent">
+			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
-				<span class="actualpricerate"><del> $ 3100</del></span>
-				<span class="actualpricetitle"> COMBO Price </span>
-				<span class="actualpricerate">$ 1499</span>
+				<span class="actualpricerate">
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 3100</span>
+				</span>
+				<span class="combopricetitle"> COMBO Price </span>
+				<span class="combopricerate">
+					<i class="fa fa-inr" aria-hidden="true"></i> 1499
+				</span>
+			</div>
 			</div>		
+		</div><!-- ser_tenth_option -->
+	</div><!-- col-lg-6 -->
+</div> <!-- . view -->
+</div> <!-- . row -->
+</div> <!-- .container -->
+
+<!-- registration -->
+<div class="container-fluid form-container">
+ <div id="form-messages">
+  <div class="form-title"> Register </div>
+	<form id="ajax-contact" method="post" action="storage.php" class="form-inline">
+		<div class="group">
+  			<div class="form-group">
+    			<label for="name">Name</label>
+    			<input type="text" class="form-control" id="name" name="name" >
+  			</div>
+  			<div class="form-group">
+    			<label for="email">Email</label>
+    			<input type="email" class="form-control" id="email" name="email">
+  			</div>
+  		</div>
+  		<div class="group atc">
+  			<div class="form-group">
+  				<label for="set_value">Selected service</label>
+					<div class="selectric-wrapper">
+		 				<select name="set_value" id="set_value" disabled>
+				          <option value="No-Combo" selected></option>
+				          <option value="Men-Combo-One">Men Combo One</option>
+				          <option value="Men-Combo-Two">Men Combo Two</option>
+				          <option value="Men-Combo-Three">Men Combo Three</option>
+				          <option value="Men-Combo-Four">Men Combo Four</option>
+				          <option value="Men-Combo-Five">Men Combo Five</option>
+				          <option value="Female-Combo-One">Female Combo One</option>
+				          <option value="Female-Combo-Two">Female Combo Two</option>
+				          <option value="Female-Combo-Three">Female Combo Three</option>
+				          <option value="Female-Combo-Four">Female Combo Four</option>
+				          <option value="Female-Combo-Five">Female Combo Five</option>
+        				</select>
+					</div>
+  			</div>
+  			<div class="form-group">
+    			<label for="number">Number</label>
+    			<input type="tel" class="form-control" id="number" name="number" >
+  			</div>
+  		</div>
+  		<div class="group tc">
+  			<div class="checkbox">
+    			<label>
+      				<input type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#myModal">terms and conditions</a>
+    			</label>
+  			</div>
+  		</div>
+  		<div class="group btc">
+  			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<h4 class="modal-title" id="myModalLabel">Terms and Condition</h4>
+      					</div>
+      					<div class="modal-body">
+      					<ul>
+        					<li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+        					<li>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</li>
+       					</ul>
+      					</div>
+    				</div>
+  				</div>
+			</div>
 		</div>
-	</div>
+		<div class="errordiv">
+		</div>
+		<div class="group">
+  			<button type="submit" class="btn btn-default">Get Notified</button>
+  		</div>
+	</form>
 </div>
-
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-1 col-lg-4">
-	<div id="form-messages">
-<form id="ajax-contact" method="post" action="storage.php">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-  </div>
-  <div class="form-group">
-	<div class="selectric-wrapper">
-		 <select name="set_value" id="set_value">
-          <option value="Men-Combo-One">Men Combo One</option>
-          <option value="Men-Combo-Two">Men Combo Two</option>
-          <option value="Men-Combo-Three">Men Combo Three</option>
-          <option value="Men-Combo-Four">Men Combo Four</option>
-          <option value="Men-Combo-Five">Men Combo Five</option>
-          <option value="Female-Combo-One">Female Combo One</option>
-          <option value="Female-Combo-Two">Female Combo Two</option>
-          <option value="Female-Combo-Three">Female Combo Three</option>
-          <option value="Female-Combo-Four">Female Combo Four</option>
-          <option value="Female-Combo-Five">Female Combo Five</option>
-        </select>
-	</div>
-  </div>
-  <div class="form-group">
-    <label for="number">Number</label>
-    <input type="tel" class="form-control" id="number" name="number" placeholder="number">
-  </div>
-  <div class="checkbox">
-    <label>
-      Just by clicking Submit your are accepted our<a data-toggle="modal" data-target="#myModal">T &amp; C</a>
-    </label>
-  </div>
-  <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Terms and Condition</h4>
-      </div>
-      <div class="modal-body">
-      <ul>
-        <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
-        <li>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</li>
-       </ul>
-      </div>
-    </div>
-  </div>
-</div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-
-	</div>
-	
-
-</div> <!-- container -->
-</div> <!-- row -->
-
-<div class="container">
+</div> 
+<!-- footer -->
+<footer class="container-fluid">
 	<div class="row">
-		<footer>
-			<address>
-				<span class="adr">
-<span class="street-address" itemprop="streetAddress">2467, 24th Cross</span>, <span class="locality"> <span itemprop="addressLocality">Banashankari 2nd Stage</span>, </span>
-<span class="region" itemprop="addressRegion">Bangalore</span>
-<span class="postal-code">560070</span>, Karnataka</span>
-			</address>
-		</footer>
+		<a href="http://www.limelitesalonandspa.com" target="_blank"> www.limelitesalonandspa.com </a> |
+		<a href="http://www.limelitesalonandspa.com" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
 	</div>
-</div>
+</footer>
 
-
+<!--
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.js"></script>
+-->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="selectric.js"></script>
+<script src="css/script.js"></script>
+<!-- <script type="text/javascript">
+	$("#ajax-contact").validate({
+    rules:{
+        termsConditions : "required"
+    }
+    invalidHandler: function(event, validator) {
+    // 'this' refers to the form
+    var errors = validator.numberOfInvalids();
+    if (errors) {
+      var message = errors == 1
+        ? 'You missed 1 field. It has been highlighted'
+        : 'You missed ' + errors + ' fields. They have been highlighted';
+      $("div.error span").html(message);
+      $("div.error").show();
+    } else {
+      $("div.error").hide();
+    }
+  }
+  }
+
+});
+</script> -->
 <script>
 $(function(){
  
 $('#set_value').selectric();
 
-$('#set_first_option').on('click', function() {
+$('#set_zero_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 0).selectric('refresh');
 });
 
-$('#set_second_option').on('click', function() {
+$('#set_first_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 1).selectric('refresh');
 });
 
-$('#set_third_option').on('click', function() {
+$('#set_second_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 2).selectric('refresh');
 });
 
-$('#set_fourth_option').on('click', function() {
+$('#set_third_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 3).selectric('refresh');
 });
 
-$('#set_fifth_option').on('click', function() {
+$('#set_fourth_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 4).selectric('refresh');
 });
 
-$('#set_sixth_option').on('click', function() {
+$('#set_fifth_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 5).selectric('refresh');
 });
 
-$('#set_seventh_option').on('click', function() {
+$('#set_sixth_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 6).selectric('refresh');
 });
 
-$('#set_eight_option').on('click', function() {
+$('#set_seventh_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 7).selectric('refresh');
 });
 
-$('#set_nineth_option').on('click', function() {
+$('#set_eight_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 8).selectric('refresh');
 });
 
-$('#set_tenth_option').on('click', function() {
+$('#set_nineth_option').on('click', function() {
   $('#set_value').prop('selectedIndex', 9).selectric('refresh');
+});
+
+$('#set_tenth_option').on('click', function() {
+  $('#set_value').prop('selectedIndex', 10).selectric('refresh');
 });
 
 
@@ -307,6 +435,10 @@ $(".coupencover").click(function() {
     $('html, body').animate({
         scrollTop: $("form").offset().top
     }, 2000);
+});
+$(function() {
+    $('.contentheight').matchHeight();
+    // $('.coupencover').matchHeight();
 });
 </script>
 </body>
