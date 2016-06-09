@@ -12,3 +12,6 @@
 - [ ] test live version
 - [ ] launch
 - [ ] report generation
+
+#### Note
+ Please don't consider release 
