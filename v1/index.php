@@ -78,8 +78,12 @@
       					</div>
       					<div class="modal-body">
       					<ul>
-        					<li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
-        					<li>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</li>
+        					<li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
+        				<li>This can be redeemed only upon presenting the confirmation Sms / Mail the before availing the services at the salon.</li>
+        				<li>This offer can be redeemed against services only.</li>
+        				<li>This offer is valid only on prior appointment.</li>
+        				<li>Limelite holds the right to make changes or withdraw the promotion as and when required.</li>
+        				<li>Service tax applicable.</li>
        					</ul>
       					</div>
     				</div>
