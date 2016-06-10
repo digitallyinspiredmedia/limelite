@@ -27,7 +27,7 @@
  <div class="container-fluid logo-container">
  	  <div class="row">
  	  <div class="logo">
- 	  	<img src="img/logo.png" alt="Lime Light" title="Lime Light" />
+ 	  	<a href="index.php"><img src="img/logo.png" alt="Lime Light" title="Lime Light" class="img-responsive" /></a>
  	  </div>
 </div>
  </div>
@@ -51,10 +51,9 @@
 
 <footer class="container-fluid">
 	<div class="row">
-			<a href="http://www.limelitesalonandspa.com" target="_blank"> www.limelitesalonandspa.com </a> |
-			<i class="fa fa-facebook-official" aria-hidden="true"></i>
+		<a href="http://www.limelitesalonandspa.com" target="_blank"> www.limelitesalonandspa.com </a> |
+		<a href="https://www.facebook.com/LimeliteSalonandSpa" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
 	</div>
 </footer>
-
 </body>
 </html>

@@ -78,8 +78,7 @@ if ($combo == "Men-Combo-One") {
 }
 
 $param[method]= "sendMessage";
-// $param[send_to] = "917811811767";
-$param[msg_type] = "TEXT"; //Can be "FLASH”/"UNICODE_TEXT"/”BINARY”
+$param[msg_type] = "TEXT";
 $param[userid] = "2000142572";
 $param[password] = "q1ocL2FL4";
 $param[v] = "1.1";
@@ -121,24 +120,18 @@ $headers .= 'From: '.$from."\r\n".
 // Compose a simple HTML email message
 $message = '<html><body>';
 $message .= '<img src="http://limelitesalonandspa.com/images/logo.gif">';
-$message .= '<p style="color:#000;font-size:14px; border-bottom:1px solid #ff0000;">Welcome to Limelite, you have chosen <b style="color: #ff0000;">'. $combo.'</b> Kindly fix an appointment with us and show this email when you walk in! Thank You!</p>';
+$message .= '<p style="color:#000;font-size:14px; border-bottom:1px solid #eee;">Welcome to Limelite, you have chosen <b style="color: #ff0000;">'. $combo.'</b> Kindly fix an appointment with us and show this email when you walk in! Thank You!</p>';
 $message .= '<p style="color:#000;">Terms and Conditions</p>';
 $message .= '<ul>
-                <li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
-                <li>This can be redeemed only upon presenting the Sms / Mail confirming the chosen combo before availing the services at the salon.</li>
-                <li>This offer can be redeemed against services only.</li>
-                <li>This offer is valid only on prior appointment.</li>
-                <li>Limelite holds the right to make changes or withdraw the promotion as and when required.</li>
-                <li>Prices mentioned are membership pricing.</li>
-                <li>This offer is applicable for salons at the below mentioned locations only.
-                  <ul>
-                    <li>KK Nagar, Chennai</li>
-                    <li>Karamangla, Bangalore</li>
-                    <li>Yelanka, Bangalore</li>
-                  </ul>
-                </li>
-                <li>Service tax applicable.</li>
-                </ul>';
+                        <li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
+                        <li>This can be redeemed only upon presenting the sms / Mail confirming the chosen combo before availing the services at the salon.</li>
+                        <li>This offer can be redeemed against services only.</li>
+                        <li>This offer is valid only on prior appointment.</li>
+                        <li>Limelite holds the right to make changes or withdraw the promotion as and when required.</li>
+                        <li>Prices mentioned are membership pricing.</li>
+                        <li>This offer is applicable only in Noida.</li>
+                        <li>Service tax applicable.</li>
+                        </ul>';
 $message .= '</body></html>';
  
 // Sending email
@@ -155,8 +148,8 @@ if(mail($to, $subject, $message, $headers)){
                 //status of store
                 //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
                 //status of sms ok 
-                //echo $curl_scraped_page;
-                   header("Location: thankyou.php");
+                echo $curl_scraped_page;
+                 //  header("Location: thankyou.php");
                 } else {   // If Returned user . update the user record
                 //$query = "UPDATE sms SET name='$name', email='$email', number='$number',combo='$combo' where email='$email' ";
                 $query = "INSERT INTO sms (name,email,number,combo) VALUES ('$name','$email','$number','$combo')";
@@ -166,8 +159,8 @@ if(mail($to, $subject, $message, $headers)){
             //status of store
                 //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
             //status of sms
-              //echo $curl_scraped_page;
-                header("Location: thankyou.php");
+              echo $curl_scraped_page;
+              //  header("Location: thankyou.php");
                 }
             }
 

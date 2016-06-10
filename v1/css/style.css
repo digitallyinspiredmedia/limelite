@@ -38,11 +38,9 @@ a:active {
     font-weight: normal;
     font-style: normal;
 }
-/*@media(max-width: 500px){
-	.col-xs-6{
-		width: 100%;
-	}
-}*/
+body{
+	font-family: 'helveticaregular';
+}
 header{
 	position: relative;
 }
@@ -55,6 +53,11 @@ header .logo-container{
 .banner img{
 	margin: 0 auto;
 }
+.banner img{
+	-webkit-box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.25);
+-moz-box-shadow:    1px 3px 6px 0px rgba(0, 0, 0, 0.25);
+box-shadow:         1px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
 .banner-container{
 	position: absolute;
 	top: 152px;
@@ -62,10 +65,13 @@ header .logo-container{
 	left: 0;
 }
 .view{
-	margin-top: 156px;
+	margin-top: 56px;
     overflow: hidden;
     margin-bottom: 60px;
     text-align: center;
+}
+.modal-body{
+	text-align: left;
 }
 .thankyou.view{
 	font-size: 30px;
@@ -233,24 +239,44 @@ span.service {
      line-height: normal;
      margin-bottom: 3px;
      display: block;
+     text-align: left;
 }
 .form-container{
 	background-color: #ededed;
 	overflow: hidden;
     padding-bottom: 41px;
+    margin-top: 175px;
 }
 .group{
 	display: block;
-	padding-bottom: 26px;
+	padding-bottom: 30px;
+}
+.form-group.spname{
+	width: 746px;
+}
+.form-group.spemail{
+	width: 430px;
+}
+.form-group.spnumber{
+	width: 296px;
+}
+.checkbox{
+	width: 746px;
+	text-align: left;
 }
 .group.atc{
 	padding-bottom: 8px;
 }
 .group.tc{
-	padding-bottom: 16px;
+	padding-top: 12px;
+	padding-bottom: 18px;
 }
 .group.btc{
 	padding-bottom: 0;
+}
+.getbutton{
+	width: 780px;
+    padding: 0;
 }
 .form-inline .checkbox input[type=checkbox]{
 	border-radius: 0;

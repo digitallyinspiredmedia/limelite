@@ -7,7 +7,7 @@
  <meta name="description" content="">
  <meta name="keywords" content="">
  <meta name="author" content="">
- <title>Lime light 0.2</title>
+ <title>Lime light 0.3</title>
 <!--  <script src="https://use.fontawesome.com/d0029c4b59.js"></script>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
  <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,7 +27,7 @@
 <div class="container-fluid logo-container">
 	<div class="row">
 	 <div class="logo">
-	  <img src="img/logo.png" alt="Lime Light" title="Lime Light" class="img-responsive" />
+	  <a href="index.php"><img src="img/logo.png" alt="Lime Light" title="Lime Light" class="img-responsive" /></a>
 	 </div>
 	</div>
 </div><!-- container-fluid logo-container -->
@@ -338,7 +338,7 @@
 		<div class="group">
   			<!-- <button type="submit" class="btn btn-default">Get Notified</button> -->
 
-<button class="send">	
+<button type="submit" class="send">	
   <div class="text">SEND</div>
   <div class="loader"></div>
   <div class="done">SUCCESS</div>
@@ -351,7 +351,7 @@
 <footer class="container-fluid">
 	<div class="row">
 		<a href="http://www.limelitesalonandspa.com" target="_blank"> www.limelitesalonandspa.com </a> |
-		<a href="http://www.limelitesalonandspa.com" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+		<a href="https://www.facebook.com/LimeliteSalonandSpa" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
 	</div>
 </footer>
 

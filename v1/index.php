@@ -27,7 +27,7 @@
 <div class="container-fluid logo-container">
 	<div class="row">
 	 <div class="logo">
-	  <img src="img/logo.png" alt="Lime Light" title="Lime Light" class="img-responsive" />
+	  <a href="index.php"><img src="img/logo.png" alt="Lime Light" title="Lime Light" class="img-responsive" /></a>
 	 </div>
 	</div>
 </div><!-- container-fluid logo-container -->
@@ -47,18 +47,19 @@
  <div class="view">
 
   <form class="form-inline" role="form" method="post" action="sms.php">
-				
-					<div class="form-group">
-						<label for="name" class="sr-only">Name</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="First &amp; Last Name" value="">
+				  <div class="group">
+					<div class="form-group spname">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" value="">
 					</div>
-					<div class="form-group">
-						<label for="email" class="sr-only" >Email</label>
-							<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+          </div>
+					<div class="form-group spemail">
+						<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" name="email" value="">
 					</div>
-					<div class="form-group">
-						<label for="number" class="sr-only" >Phone Number</label>
-						<input type="tel" class="form-control" id="number" name="number" placeholder="number" value="">
+					<div class="form-group spnumber">
+						<label for="number">Phone Number</label>
+						<input type="tel" class="form-control" id="number" name="number" value="">
 					</div>
 					<div class="group tc">
   			<div class="checkbox">
@@ -78,7 +79,7 @@
       					</div>
       					<div class="modal-body">
       					<ul>
-        					<li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
+        				<li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
         				<li>This can be redeemed only upon presenting the confirmation Sms / Mail the before availing the services at the salon.</li>
         				<li>This offer can be redeemed against services only.</li>
         				<li>This offer is valid only on prior appointment.</li>
@@ -92,7 +93,7 @@
 		</div>
 		<div class="errordiv">
 		</div>
-		<div class="group">
+		<div class="group getbutton">
   			<button type="submit" class="btn btn-default">Get Notified</button>
   		</div>
 				</form> 
@@ -103,7 +104,7 @@
 <footer class="container-fluid">
 	<div class="row">
 		<a href="http://www.limelitesalonandspa.com" target="_blank"> www.limelitesalonandspa.com </a> |
-		<a href="http://www.limelitesalonandspa.com" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+		<a href="https://www.facebook.com/LimeliteSalonandSpa" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
 	</div>
 </footer>
 
