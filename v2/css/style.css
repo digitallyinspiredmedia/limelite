@@ -50,6 +50,7 @@ header .logo-container{
 	background: #ff3333;
 	padding-top: 54px;
 	min-height: 100vh;
+	min-height: 627px
 }
 .logo img,
 .banner img{
