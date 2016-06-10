@@ -339,9 +339,9 @@
   			<!-- <button type="submit" class="btn btn-default">Get Notified</button> -->
 
 <button type="submit" class="send">	
-  <div class="text">SEND</div>
+  <div class="text">Get Notified</div>
   <div class="loader"></div>
-  <div class="done">SUCCESS</div>
+  <div class="done">Success</div>
 </button>
   		</div>
 	</form>

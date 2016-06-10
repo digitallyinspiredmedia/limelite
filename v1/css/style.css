@@ -78,6 +78,7 @@ box-shadow:         1px 3px 6px 0px rgba(0, 0, 0, 0.25);
 	font-family: 'helveticabold';
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: 156px;
 }
 .coupentitle,
 .coupencover{
@@ -303,7 +304,7 @@ span.service {
 	border-left: 1px solid #cacaca;
 	background-color: #fff;
 }
-.btn-default{
+/*.btn-default{
 	background-color: #ed1c24;
 	border-color: #ed1c24;
 	outline: 0;
@@ -321,6 +322,82 @@ span.service {
 	color: #ed1c24;
 	border: 1px solid #fff;
 	background-color: #fff;
+}*/
+
+button {
+  outline: 0;
+}
+button.active {
+  outline: 0;
+}
+button.send {
+  border: 2px solid #ed1c24;
+  background-color: #ed1c24;
+  color: #fff;
+  border-radius: 0;
+  padding: 15px 80px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+   font-family: 'helveticaregular';
+	 font-size: 20px;
+	 line-height: normal;
+	padding: 16px 0px 10px;
+	 width: 192px;
+	text-align: center;
+	/* -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);*/
+}
+button.send .text.active {
+  -webkit-transform: translateY(-350%) scale(0);
+          transform: translateY(-350%) scale(0);
+  -webkit-transition: 0.35s cubic-bezier(0.34, -0.61, 1, 0.64);
+  transition: 0.35s cubic-bezier(0.34, -0.61, 1, 0.64);
+}
+button.send.active {
+  padding: 0px 80px;
+  -webkit-transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+  transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+}
+button.send .loader {
+  position: absolute;
+  width: calc(0% - 4px);
+  height: calc(100% - 4px);
+  background-color: #fff;
+  left: 2px;
+  top: 2px;
+  border-radius: 0;
+}
+button.send .loader.active {
+  width: calc(100% - 4px);
+  -webkit-transition: 1.3s ease-in-out;
+  transition: 1.3s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+button.send .done {
+  color: #fff;
+   border: 2px solid #ed1c24;
+  background-color: #ed1c24;
+  margin-top: -22px;
+  -webkit-transform: translateY(300%) scale(0);
+          transform: translateY(300%) scale(0);
+}
+button.send .done.active {
+  -webkit-transform: translateY(0%) scale(1);
+          transform: translateY(0%) scale(1);
+  -webkit-transition: 0.4s cubic-bezier(0.34, -0.61, 1, 0.64);
+  transition: 0.4s cubic-bezier(0.34, -0.61, 1, 0.64);
+     padding: 16px 0px 10px;
+}
+button.send.finished {
+  padding: 0px 0;
+  -webkit-transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+  transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+}
+button.send:hover, button.send:focus {
+    background: transparent;
+    color: #ed1c24;
 }
 footer{
 	background-color: #fff;

@@ -288,7 +288,6 @@ button {
 button.active {
   outline: 0;
 }
-
 button.send {
   border: 2px solid #ed1c24;
   background-color: #ed1c24;
@@ -338,7 +337,7 @@ button.send .done {
   color: #fff;
    border: 2px solid #ed1c24;
   background-color: #ed1c24;
-  margin-top: -20px;
+  margin-top: -22px;
   -webkit-transform: translateY(300%) scale(0);
           transform: translateY(300%) scale(0);
 }
@@ -347,13 +346,17 @@ button.send .done.active {
           transform: translateY(0%) scale(1);
   -webkit-transition: 0.4s cubic-bezier(0.34, -0.61, 1, 0.64);
   transition: 0.4s cubic-bezier(0.34, -0.61, 1, 0.64);
+     padding: 16px 0px 10px;
 }
 button.send.finished {
-  padding: 15px 80px;
+  padding: 0px 0;
   -webkit-transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
   transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
 }
-
+button.send:hover, button.send:focus {
+    background: transparent;
+    color: #ed1c24;
+}
 footer{
 	background-color: #fff;
 	padding-top: 34px;

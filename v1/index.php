@@ -45,26 +45,26 @@
 <div class="container-fluid form-container">
 <div class="row">
  <div class="view">
-
+ <div class="form-title"> REGISTER </div>
   <form class="form-inline" role="form" method="post" action="sms.php">
 				  <div class="group">
 					<div class="form-group spname">
 						<label for="name">Name</label>
-						<input type="text" class="form-control" id="name" name="name" value="">
+						<input required type="text" class="form-control" id="name" name="name" value="">
 					</div>
           </div>
 					<div class="form-group spemail">
 						<label for="email">Email</label>
-							<input type="email" class="form-control" id="email" name="email" value="">
+							<input required type="email" class="form-control" id="email" name="email" value="">
 					</div>
 					<div class="form-group spnumber">
 						<label for="number">Phone Number</label>
-						<input type="tel" class="form-control" id="number" name="number" value="">
+						<input required type="tel" class="form-control" id="number" name="number" value="">
 					</div>
 					<div class="group tc">
   			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#tc">terms and conditions</a>
+      				<input required type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#tc">terms and conditions</a>
     			</label>
   			</div>
   		</div>
@@ -94,7 +94,12 @@
 		<div class="errordiv">
 		</div>
 		<div class="group getbutton">
-  			<button type="submit" class="btn btn-default">Get Notified</button>
+  			<!-- <button class="btn btn-default">Get Notified</button> -->
+        <button type="submit"  class="send"> 
+  <div class="text">Get Notified</div>
+  <div class="loader"></div>
+  <div class="done">Success</div>
+</button>
   		</div>
 				</form> 
 </div>

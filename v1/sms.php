@@ -70,7 +70,7 @@ $headers .= 'From: '.$from."\r\n".
 // Compose a simple HTML email message
 $message = '<html><body>';
 $message .= '<img src="http://limelitesalonandspa.com/images/logo.gif">';
-$message .= '<p style="color:#000;font-size:14px; border-bottom:1px solid #eee;">Dear Customer, Thank you for registering with Limelite. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!</p>';
+$message .= '<p style="color:#000;font-size:14px; padding-bottom: 10px;border-bottom:1px solid #eee;">Dear Customer, Thank you for registering with Limelite. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!</p>';
 $message .= '<p style="color:#000;">Terms and Conditions</p>';
 $message .= '<ul>
 				<li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
