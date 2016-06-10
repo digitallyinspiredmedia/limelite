@@ -34,8 +34,8 @@
  <div class="container banner-container">
   <div class="row">
   	<div class="banner">
- 	  	<img src="img/banner.png" alt="star style combos" title="" />
-	</div>
+  	  <img src="img/banner.png" alt="Straightening Offer" title="" class="img-responsive"  />
+  	 </div>
   </div>
  </div>
  </header>
