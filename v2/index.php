@@ -115,7 +115,7 @@
 				<div class="center">
 				<span class="service"> Hair Cut <span class="symbol">+</span> </span>
 				<span class="service"> Freshen Citron Pedicure <span class="symbol">+</span> </span>
-				<span class="service"> L'oreal Inoa <br> <small>(non-ammonla color)</small></span>
+				<span class="service"> L'oreal Inoa <br> <small>(non-ammonia color)</small></span>
 				</div>
 			</div>
 			<div class="rightcontent">
@@ -239,7 +239,7 @@
 			<div class="center">
 				<span class="service"> L'Oreal Hair spa </span>
 				<span class="service"> Green Tea Pedicure + </span>
-				<span class="service"> Silkem Glow Facial  </span>
+				<span class="service"> Silken Glow Facial  </span>
 			</div>
 		    </div>
 			<div class="rightcontent">
