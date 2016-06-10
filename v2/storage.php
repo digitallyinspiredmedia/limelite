@@ -22,30 +22,33 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $number = $_POST['number'];
 $combo = $_POST['set_value'];
-
+$ten = '10';
  //sms
 $request =""; //initialise the request variable
 $param[send_to] = $number;
 if ($combo == "Combo-One") {
-    $param[msg] = "Dear Patron, We are Celebrating our 1st anniversary at LIMELITE-Race course! Avail flat 30% off on services. Hurry, Ltd period offer. Call 0422- 4202006 for appt."; }
+    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 1. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Combo-Two"){
-    $param[msg] = "Dear Patron, Limelite Salon- LB road is closed for renovation from today. To enjoy your continued services at Limelite, Call our nearest salon in Chamiers road: 044-24353751 or ECR-Neelankarai: 044-42868080"; }
+    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 2. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Combo-Three"){
-   $param[msg] = "Dear Patron, Get dreamy makeovers with the LIMELITE MONTH END OFFER ! Avail FLAT 30% OFF on all services at our Racecourse salon . Call 4202006 for appt. Offer valid till May 31 , 2016.T&C."; }
+   $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 3. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Combo-Four"){
-    $param[msg] = "Dear Patron, Get dreamy makeovers with the LIMELITE MONTH END OFFER ! Avail FLAT 30% OFF on all services at our Forum mall salon . Call 66528417 for appt. Offer valid till May 31 , 2016.T&C."; }
+    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 4. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Combo-Five"){
-     $param[msg] = "Dear Patron, Get dreamy makeovers with the LIMELITE MONTH END OFFER ! Avail FLAT 30% OFF on all services at our Jayanagar salon . Call 40993255 for appt. Offer valid till May 31 , 2016.T&C."; }
+     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 5. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-One") {
-     $param[msg] = "Dear Patron, Limelite Salon- LB road is currently closed for renovation. To enjoy your continued services at Limelite, Call our nearest salon in ECR-Neelankarai: 044-42868080 or Chamiers road: 044-24353751."; }
+     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 6. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-Two"){
-     $param[msg] = "Dear Patron, Visit Limelite Salon for your new look! Get your Free consultation and Makeover from our Experts today. For details call123"; }
+     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 7. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-Three"){
-     $param[msg] = "Dear Patron, Celebrate this Raksha Bandhan with Limelite Salon! Avail flat 15% off on services. Hurry Ltd period offer. Call 123 for appt. TC"; }
+     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 8. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-Four"){
-     $param[msg] = "Dear Patron, We regret for the inconvenience caused. Limelite -Kilpauk is under renovation. Kindly reach our nearest salon in Nungambakkam for an appt. Call 044-28295270"; }
+     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 9. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-Five"){
-     $param[msg] = "Dear Patron, Enjoy the biggest perks of style only at LIMELITE Salon! Get great discounts from our special combos. Call 123 for details and appt.";
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen COMBO";
+    $params[msg] .= $ten ;
+    $params[msg] .= "Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg];
 }
 
 $param[method]= "sendMessage";
@@ -112,9 +115,9 @@ curl_close($ch);
                 //status of store
                 //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
                 //status of sms ok 
-                //echo $curl_scraped_page;
+                echo $curl_scraped_page;
 
-                    header("Location: thankyou.php");
+                  //  header("Location: thankyou.php");
                 } else {   // If Returned user . update the user record
                 //$query = "UPDATE sms SET name='$name', email='$email', number='$number',combo='$combo' where email='$email' ";
                 $query = "INSERT INTO sms (name,email,number,combo) VALUES ('$name','$email','$number','$combo')";
@@ -124,8 +127,8 @@ curl_close($ch);
             //status of store
                 //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
             //status of sms
-                //echo $curl_scraped_page;
-                 header("Location: thankyou.php");
+                echo $curl_scraped_page;
+                 //header("Location: thankyou.php");
                 }
             }
 

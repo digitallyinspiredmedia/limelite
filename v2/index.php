@@ -434,7 +434,7 @@ $(document).ready(function(){
 $(".coupencover").click(function() {
     $('html, body').animate({
         scrollTop: $("form").offset().top
-    }, 2000);
+    }, 1250);
 });
 $(function() {
     $('.contentheight').matchHeight();
