@@ -255,12 +255,15 @@ span.service {
 }
 .form-group.spname{
 	width: 746px;
+	margin: 0;
 }
 .form-group.spemail{
 	width: 430px;
+	float: left;
 }
 .form-group.spnumber{
 	width: 296px;
+	margin: 0;
 }
 .checkbox{
 	width: 746px;
@@ -277,8 +280,13 @@ span.service {
 	padding-bottom: 0;
 }
 .getbutton{
-	width: 780px;
+	/*width: 780px;*/
     padding: 0;
+    text-align: left;
+}
+.form-inline{
+	width: 745px;
+	margin: 0 auto;
 }
 .form-inline .checkbox input[type=checkbox]{
 	border-radius: 0;
