@@ -426,3 +426,121 @@ footer a:focus{
 	color: #ff3333;
 	text-decoration: none;
 }
+
+@media (max-width: 768px) {
+	.banner{
+		padding: 0 20px;
+	}
+	header .logo-container{
+		min-height: 446px;
+	}
+	.form-container{
+		margin-top: 74px;
+	}
+	.form-title{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.view{
+		margin-bottom: 0;
+	}
+	.form-inline{
+		width: 420px;
+	}
+	.form-group.spname,
+	.form-group.spemail,
+	.form-group.spnumber{
+		width: 100%;
+	}
+	.group,
+	.form-group.spemail {
+    	padding-bottom: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.banner{
+		padding: 0 20px;
+	}
+	header .logo-container{
+		min-height: 296px;
+	}
+	.form-container{
+		margin-top: 60px;
+		padding-bottom: 20px;
+	}
+	.form-title{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.view{
+		margin-bottom: 0;
+	}
+	.form-inline{
+		width: 320px;
+	}
+	.form-group.spname,
+	.form-group.spemail,
+	.form-group.spnumber{
+		width: 100%;
+	}
+	.group,
+	.form-group.spemail {
+    	padding-bottom: 15px;
+	}
+	.form-group.spemail{
+		margin-bottom: 0px;
+	 }
+	 .group.tc{
+	 	padding: 10px 0;
+	 }
+	 .form-title{
+	 	font-size: 20px;
+	 }
+	 .form-inline .form-control {
+   		padding-top: 15px;
+    	padding-bottom: 15px;
+	}
+	button.send{
+		font-size: 16px;
+	}
+	button.send{
+		padding: 10px 0 10px;
+	}
+	footer {
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 375px) {
+	header .logo-container{
+		padding-top: 22px;
+	}
+	.logo img{
+		width: 70%;
+	}
+	.form-container{
+		margin-top: 0;
+	}
+	.banner-container {
+    	top: 75px;
+    }
+}
+@media (max-width: 320px) {
+	header .logo-container {
+    	min-height: 262px;
+	}
+	.form-inline {
+    	width: 272px;
+	}
+	.form-title{
+		margin-bottom: 10px;
+	}
+	.form-container{
+		padding-bottom: 0;
+	}
+	footer{
+		padding: 10px 0;
+	}
+}
