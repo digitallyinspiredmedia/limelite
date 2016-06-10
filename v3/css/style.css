@@ -260,6 +260,22 @@ span.service {
 .form-inline .checkbox input[type=checkbox]{
 	border-radius: 0;
 	vertical-align: sub;
+	position: relative;
+	top: -2px;
+}
+.checkbox a{
+	color: #3a8acf;
+}
+.checkbox a:hover,
+.checkbox a:focus{
+	color: #ff0000;
+}
+.checkbox label{
+	color: #747474;
+}
+.form-inline .checkbox input[type=checkbox]{
+	border-radius: 0;
+	vertical-align: sub;
 }
 .form-inline .form-control {
 	width: 100%;

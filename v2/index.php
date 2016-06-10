@@ -59,11 +59,11 @@
 				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span> <sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 470 </span>
+					<span> <sup><i class="fa fa-inr" aria-hidden="true"></i></sup>470 </span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
 				<span class="combopricerate">
-					<i class="fa fa-inr" aria-hidden="true"></i> 199
+					<i class="fa fa-inr" aria-hidden="true"></i>199
 				</span>
 				</div>
 			</div>
@@ -80,11 +80,11 @@
 				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span> <sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 875</span>
+					<span> <sup><i class="fa fa-inr" aria-hidden="true"></i></sup>875</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
 				<span class="combopricerate">
-					<i class="fa fa-inr" aria-hidden="true"></i> 399
+					<i class="fa fa-inr" aria-hidden="true"></i>399
 				</span>
 				</div>
 			</div>	
@@ -101,7 +101,7 @@
 				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 1200 </span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>1200</span>
 				</span>
 				<span class="combopricetitle">COMBO Price </span>
 				<span class="combopricerate">
@@ -143,7 +143,7 @@
 				<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 1875</span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>1875</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
 				<span class="combopricerate">
@@ -168,10 +168,10 @@
 			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 695</span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>695</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price  </span>
-				<span class="combopricerate"> <i class="fa fa-inr" aria-hidden="true"></i> 299 </span>
+				<span class="combopricerate"> <i class="fa fa-inr" aria-hidden="true"></i>299 </span>
 			</div>
 			</div>		
 		</div><!-- ser_sixth_option -->
@@ -187,10 +187,10 @@
 			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 910</span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>910</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
-				<span class="combopricerate"> <i class="fa fa-inr" aria-hidden="true"></i> 499</span>
+				<span class="combopricerate"> <i class="fa fa-inr" aria-hidden="true"></i>499</span>
 			</div>
 			</div>		
 		</div><!-- ser_seventh_option -->
@@ -206,11 +206,11 @@
 			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 2050</span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>2050</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
 				<span class="combopricerate">
-					<i class="fa fa-inr" aria-hidden="true"></i> 849
+					<i class="fa fa-inr" aria-hidden="true"></i>849
 				</span>
 			</div>
 			</div>		
@@ -227,11 +227,11 @@
 			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 2905</span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>2905</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
 				<span class="combopricerate">
-					<i class="fa fa-inr" aria-hidden="true"></i> 1199
+					<i class="fa fa-inr" aria-hidden="true"></i>1199
 				</span>
 			</div>
 			</div>		
@@ -248,11 +248,11 @@
 			<div class="center">
 				<span class="actualpricetitle"> Actual Price </span>
 				<span class="actualpricerate">
-					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup> 3100</span>
+					<span><sup><i class="fa fa-inr" aria-hidden="true"></i></sup>3100</span>
 				</span>
 				<span class="combopricetitle"> COMBO Price </span>
 				<span class="combopricerate">
-					<i class="fa fa-inr" aria-hidden="true"></i> 1499
+					<i class="fa fa-inr" aria-hidden="true"></i>1499
 				</span>
 			</div>
 			</div>		
@@ -320,7 +320,7 @@
       					<div class="modal-body">
       					<ul>
         				<li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
-        				<li>This can be redeemed only upon presenting the Sms / Mail confirming the chosen combo before availing the services at the salon.</li>
+        				<li>This can be redeemed only upon presenting the SMS / Mail confirming the chosen combo before availing the services at the salon.</li>
         				<li>This offer can be redeemed against services only.</li>
         				<li>This offer is valid only on prior appointment.</li>
         				<li>Limelite holds the right to make changes or withdraw the promotion as and when required.</li>
