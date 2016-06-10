@@ -22,36 +22,59 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $number = $_POST['number'];
 $combo = $_POST['set_value'];
-$ten = '10';
+
  //sms
 $request =""; //initialise the request variable
 $param[send_to] = $number;
 if ($combo == "Men-Combo-One") {
-    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 1. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Men-Combo-Two"){
-    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 2. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Men-Combo-Three"){
-   $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 3. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Men-Combo-Four"){
-    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 4. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Men-Combo-Five"){
-     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 5. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Female-Combo-One") {
-     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 6. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Female-Combo-Two"){
-     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 7. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Female-Combo-Three"){
-     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 8. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Female-Combo-Four"){
     $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
     $params[msg] .= $combo ;
     $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
     $param[msg] = $params[msg]; }
  elseif ($combo == "Female-Combo-Five"){
-    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen COMBO";
-    $params[msg] .= $ten ;
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
     $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
-    $param[msg] = $params[msg];
 }
 
 $param[method]= "sendMessage";
@@ -83,7 +106,7 @@ curl_close($ch);
 //email 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $to = $email;
-$subject = 'Dear '.$name.' Welcome to Limelite';
+$subject = 'Dear '.$name.' - Welcome to Limelite';
 $from = 'sikavinraj@email.com';
  
 // To send HTML mail, the Content-type header must be set
@@ -97,9 +120,9 @@ $headers .= 'From: '.$from."\r\n".
  
 // Compose a simple HTML email message
 $message = '<html><body>';
-$message .= '<h1 style="color:#000;"></h1>';
-$message .= '<h1 style="color:#ff0000;">Combo Code: ' .$combo.'</h1>';
-$message .= '<p style="color:#000;font-size:14px; border-bottom:1px solid #ff0000;">Welcome to Limelite, you have chosen COMBO'. $param[msg].' Kindly fix an appointment with us and show this SMS when you walk in! Thank You!</p>';
+$message .= '<img src="http://limelitesalonandspa.com/images/logo.gif">';
+$message .= '<p style="color:#000;font-size:14px; border-bottom:1px solid #ff0000;">Welcome to Limelite, you have chosen <b style="color: #ff0000;">'. $combo.'</b> Kindly fix an appointment with us and show this SMS when you walk in! Thank You!</p>';
+$message .= '<p style="color:#000;">Terms and Conditions</p>';
 $message .= '<ul>
                 <li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
                 <li>This can be redeemed only upon presenting the Sms / Mail confirming the chosen combo before availing the services at the salon.</li>
