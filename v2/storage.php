@@ -26,15 +26,15 @@ $ten = '10';
  //sms
 $request =""; //initialise the request variable
 $param[send_to] = $number;
-if ($combo == "Combo-One") {
+if ($combo == "Men-Combo-One") {
     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 1. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
- elseif ($combo == "Combo-Two"){
+ elseif ($combo == "Men-Combo-Two"){
     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 2. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
- elseif ($combo == "Combo-Three"){
+ elseif ($combo == "Men-Combo-Three"){
    $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 3. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
- elseif ($combo == "Combo-Four"){
+ elseif ($combo == "Men-Combo-Four"){
     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 4. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
- elseif ($combo == "Combo-Five"){
+ elseif ($combo == "Men-Combo-Five"){
      $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 5. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-One") {
      $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 6. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
@@ -43,11 +43,14 @@ if ($combo == "Combo-One") {
  elseif ($combo == "Female-Combo-Three"){
      $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 8. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
  elseif ($combo == "Female-Combo-Four"){
-     $param[msg] = "Dear Customer, Welcome to Limelite, you have chosen COMBO 9. Kindly fix an appointment with us and show this SMS when you walk in! Thank You!"; }
+    $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen ";
+    $params[msg] .= $combo ;
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $param[msg] = $params[msg]; }
  elseif ($combo == "Female-Combo-Five"){
     $params[msg] .= "Dear Customer, Welcome to Limelite, you have chosen COMBO";
     $params[msg] .= $ten ;
-    $params[msg] .= "Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
+    $params[msg] .= " Kindly fix an appointment with us and show this SMS when you walk in! Thank You!";
     $param[msg] = $params[msg];
 }
 
@@ -78,32 +81,46 @@ curl_close($ch);
 
 
 //email 
- if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["name"]));
-        $name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $combo = trim($_POST["set_value"]);
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($combo) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
-            exit;
-        }
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = $email;
-        // Set the email subject.
-        $subject = "Thankyou Dear Patron : $name";
-        // Build the email content.
-        $email_content .= "Coupon Code:\n$combo\n";
-        $email_content .= "Mesage Templete:\n$param[msg] \n";
-        $email_content .= "Terms and Condition :\n Bla bal bla bla \n";
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$to = $email;
+$subject = 'Dear '.$name.' Welcome to Limelite';
+$from = 'sikavinraj@email.com';
+ 
+// To send HTML mail, the Content-type header must be set
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+ 
+// Create email headers
+$headers .= 'From: '.$from."\r\n".
+    'Reply-To: '.$from."\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+ 
+// Compose a simple HTML email message
+$message = '<html><body>';
+$message .= '<h1 style="color:#000;"></h1>';
+$message .= '<h1 style="color:#ff0000;">Combo Code: ' .$combo.'</h1>';
+$message .= '<p style="color:#000;font-size:14px; border-bottom:1px solid #ff0000;">Welcome to Limelite, you have chosen COMBO'. $param[msg].' Kindly fix an appointment with us and show this SMS when you walk in! Thank You!</p>';
+$message .= '<ul>
+                <li>This offer cannot be clubbed with any other offer / promotion at the salon.</li>
+                <li>This can be redeemed only upon presenting the Sms / Mail confirming the chosen combo before availing the services at the salon.</li>
+                <li>This offer can be redeemed against services only.</li>
+                <li>This offer is valid only on prior appointment.</li>
+                <li>Limelite holds the right to make changes or withdraw the promotion as and when required.</li>
+                <li>Prices mentioned are membership pricing.</li>
+                <li>This offer is applicable for salons at the below mentioned locations only.
+                  <ul>
+                    <li>KK Nagar, Chennai</li>
+                    <li>Karamangla, Bangalore</li>
+                    <li>Yelanka, Bangalore</li>
+                    <li>Service tax applicable.</li>
+                  </ul>
+                </li>
+                </ul>';
+$message .= '</body></html>';
+ 
+// Sending email
+if(mail($to, $subject, $message, $headers)){
+    //echo 'Your mail has been sent successfully.';
            // function checkuser($name,$email,$number,$combo){
              $check = mysql_query("select * from sms where email='$email'");
                 $check = mysql_num_rows($check);
@@ -115,9 +132,8 @@ curl_close($ch);
                 //status of store
                 //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
                 //status of sms ok 
-                echo $curl_scraped_page;
-
-                  //  header("Location: thankyou.php");
+                //echo $curl_scraped_page;
+                   header("Location: thankyou.php");
                 } else {   // If Returned user . update the user record
                 //$query = "UPDATE sms SET name='$name', email='$email', number='$number',combo='$combo' where email='$email' ";
                 $query = "INSERT INTO sms (name,email,number,combo) VALUES ('$name','$email','$number','$combo')";
@@ -127,13 +143,15 @@ curl_close($ch);
             //status of store
                 //echo "Thank You! Your message has been sent. :) :) :) , please check your email id ";
             //status of sms
-                echo $curl_scraped_page;
-                 //header("Location: thankyou.php");
+              //echo $curl_scraped_page;
+                header("Location: thankyou.php");
                 }
             }
 
         //}
-        
- }
-      
+    } else{
+    echo 'Unable to send email. Please try again.';
+}
+
+    
 ?>
