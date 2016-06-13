@@ -265,7 +265,7 @@
 <!-- registration -->
 <div class="container-fluid form-container">
  <div id="form-messages">
-  <div class="form-title"> REGISTER </div>
+  <div class="form-title">  Claim your Offer Now </div>
 	<form id="ajax-contact" method="post" action="storage.php" class="form-inline">
 		<div class="group">
   			<div class="form-group">

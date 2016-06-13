@@ -45,7 +45,7 @@
 <div class="container-fluid form-container">
 <div class="row">
  <div class="view">
- <div class="form-title"> REGISTER </div>
+ <div class="form-title"> Claim your Offer Now  </div>
   <form class="form-inline" role="form" method="post" action="sms.php">
 				  <div class="group">
 					<div class="form-group spname">
