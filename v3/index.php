@@ -270,11 +270,11 @@
 		<div class="group">
   			<div class="form-group">
     			<label for="name">Name</label>
-    			<input type="text" class="form-control" id="name" name="name" >
+    			<input required type="text" class="form-control" id="name" name="name" >
   			</div>
   			<div class="form-group">
     			<label for="email">Email</label>
-    			<input type="email" class="form-control" id="email" name="email">
+    			<input required type="email" class="form-control" id="email" name="email">
   			</div>
   		</div>
   		<div class="group atc">
@@ -298,13 +298,13 @@
   			</div>
   			<div class="form-group">
     			<label for="number">Number</label>
-    			<input type="tel" class="form-control" id="number" name="number" >
+    			<input required type="tel" class="form-control" id="number" name="number" >
   			</div>
   		</div>
   		<div class="group tc">
   			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#tc">terms and conditions</a>
+      				<input required type="checkbox" id="termsConditions" name="termsConditions"> I agree to the <a data-toggle="modal" data-target="#tc">terms and conditions</a>
     			</label>
   			</div>
   		</div>
