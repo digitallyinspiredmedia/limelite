@@ -45,7 +45,7 @@
 <div class="container-fluid form-container">
 <div class="row">
  <div class="view">
- <div class="form-title"> Claim your Offer Now  </div>
+ <div class="form-title"> Claim your offer now  </div>
   <form class="form-inline" role="form" method="post" action="sms.php">
 				  <div class="group">
 					<div class="form-group spname">

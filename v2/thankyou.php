@@ -44,7 +44,7 @@
 <div class="container">
  <div class="row">
   <div class="thankyou view">
-	<p>Your offer is on its way.</p>
+	<p>Your offer is on it's way</p>
   </div>
  </div>
 </div>
