@@ -525,3 +525,7 @@ footer a:focus{
 		width: 92%;
 	}
 }
+
+.selectric-open .selectric-items{
+	visibility: hidden;
+}
