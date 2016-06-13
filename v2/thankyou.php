@@ -7,11 +7,11 @@
  <meta name="description" content="">
  <meta name="keywords" content="">
  <meta name="author" content="">
- <title>Lime light 0.2</title>
-<!--  <script src="https://use.fontawesome.com/d0029c4b59.js"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+ <title>Combo Offer | LimeLite Salon &amp; Spa</title>
+<script src="https://use.fontawesome.com/d0029c4b59.js"></script>
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
  <link rel="stylesheet" href="css/bootstrap.min.css">
- <link rel="stylesheet" href="css/font-awesome.min.css">
+ <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
  <link rel="stylesheet" href="css/selectric.css">
  <link rel="stylesheet" href="css/style.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,8 +51,7 @@
 
 <footer class="container-fluid">
 	<div class="row">
-		<a href="http://www.limelitesalonandspa.com" target="_blank"> www.limelitesalonandspa.com </a> |
-		<a href="https://www.facebook.com/LimeliteSalonandSpa" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+		 <a href="http://www.limelitesalonandspa.com" target="_blank"> <i class="fa fa-globe" aria-hidden="true"></i> </a> | <a href="https://www.facebook.com/LimeliteSalonandSpa" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
 	</div>
 </footer>
 
