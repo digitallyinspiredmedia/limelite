@@ -174,6 +174,7 @@ span.service {
 .actualpricerate span sup i,
 .actualpricerate span sup{
 	text-decoration: none;
+	top: 0;
 }
 .actualpricerate span{
 	color: #000;
@@ -189,7 +190,7 @@ span.service {
 }
 .combopricerate i{
     position: relative;
-    top: -.3em;
+    top: 0em;
     font-size: 75%;
     line-height: 0;
     vertical-align: baseline;
@@ -417,7 +418,7 @@ footer a:focus{
 		font-size: 21px;
 	}
 	.combopricerate i{
-		top: -0.2em;
+		top: 0em;
 	}
 	.group{
 		margin: 0 auto;
