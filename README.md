@@ -10,11 +10,11 @@
 - [x] Static SMS Integration
 - [x] Dynamic SMS Integration
 - [x] Email template test
-- [ ] Email template final
-- [ ] Form Validation
-- [ ] Version 2 with full UI
-- [ ] Version 3 with responsive UI
-- [ ] test live version
+- [x] Email template final
+- [x] Form Validation
+- [x] Version 2 with full UI
+- [x] Version 3 with responsive UI
+- [x] test live version
 - [ ] launch
 - [ ] report generation
 
